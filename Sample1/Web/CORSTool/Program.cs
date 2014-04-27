@@ -29,7 +29,7 @@ namespace CORSTool
                 serviceProperties.Cors.CorsRules.Add(
                 new CorsRule
                 {
-                    AllowedHeaders = new List<string> { "accept", "Cache-Control", "Origin", "Referer", "User-Agent", "x-ms-blob-type" },
+                    AllowedHeaders = new List<string> { "*" },
                     AllowedMethods = CorsHttpMethods.Put | CorsHttpMethods.Get | CorsHttpMethods.Head,
                     AllowedOrigins = new List<string> { "*" },            ////This is the URL of our application.                                                 
                     MaxAgeInSeconds = 1 * 60 * 60,                                              ////Let the browswer cache it for an hour
@@ -42,6 +42,7 @@ namespace CORSTool
                 Console.WriteLine(exp);
             }
 
+            Console.WriteLine("CORS Policies set!");
             Console.ReadLine();
         }
     }

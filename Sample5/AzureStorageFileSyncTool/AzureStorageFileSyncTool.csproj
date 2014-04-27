@@ -7,8 +7,8 @@
     <ProjectGuid>{D151B7C4-1FCD-4BB0-89ED-9E468F9A44D2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SQLAzureBackupFileSyncTool</RootNamespace>
-    <AssemblyName>SQLAzureBackupFileSyncTool</AssemblyName>
+    <RootNamespace>AzureStorageFileSyncTool</RootNamespace>
+    <AssemblyName>AzureStorageFileSyncTool</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -77,7 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

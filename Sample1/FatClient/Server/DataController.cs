@@ -36,7 +36,7 @@ namespace RWWA_Article1.Server
 
             var dto = new DataDto();
 
-            var credentials = new StorageCredentials("[Enter your account name]", "[Enter your account key]");
+            var credentials = new StorageCredentials("rwwa", "vyMfaSPxURHXZaIhhFJQRg5ZLEN6qDj4yU78r3oeOH+pZzdcf4S86QvGAsB6L8JaPti9qJbB929hy1Y9hipFmw==");
 
             // Retrieve storage account from connection string.
             var storageAccount = new CloudStorageAccount(credentials, true);

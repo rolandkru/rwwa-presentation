@@ -1,0 +1,3 @@
+Delete file from datacontainer
+Clear CORS Rules
+Remove CORS Project from Web sample

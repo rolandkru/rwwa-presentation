@@ -29,7 +29,7 @@ namespace Worker
         /// </param>
         private static void Main(string[] args)
         {
-            var credentials = new StorageCredentials("[Enter your account name]", "[Enter your account key]");
+            var credentials = new StorageCredentials("rwwa", "vyMfaSPxURHXZaIhhFJQRg5ZLEN6qDj4yU78r3oeOH+pZzdcf4S86QvGAsB6L8JaPti9qJbB929hy1Y9hipFmw==");
 
             // Retrieve storage account from connection string.
             var storageAccount = new CloudStorageAccount(credentials, true);
@@ -37,6 +37,7 @@ namespace Worker
 
             // Retrieve a reference to a queue
             CloudQueue queue = queueClient.GetQueueReference("dataqueue");
+            queue.CreateIfNotExists();
 
             Console.WriteLine("Up and listening to the queue.");
 

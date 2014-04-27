@@ -1,0 +1,2 @@
+Delete clientlogs container
+Delete clientlogs table

@@ -1,0 +1,5 @@
+Set links to https://rwwa.blob.core.windows.net/sample3/ (2 times)
+
+Set olive image file to oliveburl.jpg and other to oliveburl2.jpg
+
+CORS must be set.

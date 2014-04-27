@@ -1,7 +1,5 @@
 ﻿namespace ClientLog
 {
-    using System.Data.Services.Client;
-
     using log4net.Appender;
     using log4net.Core;
 
@@ -32,7 +30,7 @@
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
 
             // Create the CloudTable object that represents the "people" table.
-            this.table = tableClient.GetTableReference("ClientLog");
+            this.table = tableClient.GetTableReference("ClientLogs");
             this.table.CreateIfNotExists();
         }
 

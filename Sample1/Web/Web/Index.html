@@ -5,8 +5,10 @@
 </head>
 <body>
     <form id="form1">
-        <input type="text" name="sasurl" id="sasurl" />
-        <input type="file" name="fileToUpload" id="fileToUpload" />
+        <input type="text" name="sasurl" id="sasurl" style="width: 1000px"
+               value="https://rwwa.blob.core.windows.net/datacontainer/Test.txt?sr=c&sv=2012-02-12&si=WebUpload&sig=OfeEP5jRMV6qHuyLKEFpdnghUGfMUBCcioadXmka6rg%3D" />
+        <br/>
+        <input type="file" name="fileToUpload" id="fileToUpload" /><br />
         <input type="button" onclick="uploadFile()" value="Upload" />
     </form>
 
